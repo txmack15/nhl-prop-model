@@ -6,8 +6,6 @@ l10_icf_avg = 2.9
 
 term1 = 0.65 * (sog_per_60 * toi_avg / 60)
 print(term1)
-term1 = 0.65 * (sog_per_60 * toi_avg / 60)
-print(term1)
 
 term2 = 0.2 * (season_sog / games_played)
 print(term2)
