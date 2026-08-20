@@ -13,11 +13,17 @@ Every formula is verified against real output from an existing production spread
 ## How to run
 
 1. Install the required packages:
-pip3 install pandas requests scipy --break-system-packages
+
+   ```
+   pip3 install pandas requests scipy --break-system-packages
+   ```
 
 2. Run the script:
-python3 prop_model.py
-   
+
+   ```
+   python3 prop_model.py
+   ```
+
 ## Status
 
 Core SOG model math is complete and verified. Currently uses hardcoded sample inputs for opponent factor, recent ice time, and other rate stats — next step is wiring these to a real data source instead of manual entry.
