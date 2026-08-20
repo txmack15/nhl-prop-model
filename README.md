@@ -13,9 +13,10 @@ Every formula is verified against real output from an existing production spread
 ## How to run
 
 1. Install the required packages:
+pip3 install pandas requests scipy --break-system-packages
 
 2. Run the script:
-
+python3 prop_model.py
    
 ## Status
 
