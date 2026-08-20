@@ -26,16 +26,7 @@ df = pd.DataFrame(players)
 for index, row in df.iterrows():
     print(f"{row['name']} - Shots: {row['shots']}, Goals: {row['goals']}, Assists: {row['assists']}, Games Played: {row['games_played']}")
 
-raw = '```json\n[{"caption": "What a win for the Oilers tonight!", "hashtags": "#LetsGoOilers #NHL"}]\n```'
 
-clean = raw.replace("```json", "").replace("```", "").strip()
-
-
-posts = json.loads(clean)
-
-
-players = [get_player_stats(8478402), get_player_stats(8477934)]
-df = pd.DataFrame(players)
 
 df["prop_line"] = [45.5, 30.5]
 df["edge"] = df["goals"] - df["prop_line"]
